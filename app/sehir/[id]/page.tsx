@@ -12,7 +12,7 @@ export default function SehirPage({ params }: any) {
 
   return (
     <div>
-      <div className="grid grid-cols-2 gap-5 place-content-center sm:h-[calc(100vh-56px)]">
+      <div className="grid sm:grid-cols-2 gap-5 place-content-center sm:h-[calc(100vh-56px)] px-2 sm:px-0">
         <div className="gap-4 flex flex-col justify-between relative ">
           <Image
             src={depremData.image}
@@ -43,7 +43,7 @@ export default function SehirPage({ params }: any) {
           <div className="absolute top-3 -left-4 px-3 font-semibold bg-red-500 text-white">{sehir.year}</div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           <div className="w-full border rounded-lg p-4 h-[387px] overflow-y-scroll">
             <div className="space-y-2 mb-4">
               <div className="text-sm text-neutral-500 dark:text-neutral-300 font-bold">

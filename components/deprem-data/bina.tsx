@@ -2,7 +2,7 @@
 
 import { TrendingUp } from "lucide-react";
 import { Label, PolarGrid, PolarRadiusAxis, RadialBar, RadialBarChart } from "recharts";
-import { DieProps } from "@/data/wiki";
+import { WikiProps } from "@/data/wiki";
 import { SehirTypes } from "@/data/sehir";
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,7 +20,7 @@ const chartConfig = {
 
 interface DepremDataProps {
   sehir: SehirTypes;
-  depremData: DieProps;
+  depremData: WikiProps;
 }
 
 export default function Bina({ sehir, depremData }: DepremDataProps) {
