@@ -13,7 +13,7 @@ export default function PcItem({ sehir }: { sehir: SehirTypes }) {
           </p>
         </div>
         <div className="mb-2 ms-4 mt-1 hover:scale-105 duration-200 ease-in-out">
-          <h4 className="mb-1.5 sm:text-sm md:text-xl font-semibold">
+          <h4 className="mb-1.5 sm:text-sm md:text-lg font-semibold">
             {sehir.name}
           </h4>
 
@@ -25,10 +25,11 @@ export default function PcItem({ sehir }: { sehir: SehirTypes }) {
               height={200}
               priority={true}
               quality={100}
-              className="object-cover h-[120px]"
             />
             <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute top-0 left-0 bg-red-600 w-full font-semibold text-sm text-center">
+            <div
+              className={`absolute top-0 right-0 rounded-full translate-x-5 -translate-y-4 p-2 w-[50px] h-[50px] text-center text-white border-4 border-white dark:border-black  bg-red-500`}
+            >
               {sehir.deprem.toFixed(1)}
             </div>
           </div>

@@ -11,7 +11,6 @@ export default function PhoneItem({ sehir }: { sehir: SehirTypes }) {
           alt="hakkari"
           fill
           className="object-cover"
-          sizes="100vw"
           priority={true}
           quality={100}
         />

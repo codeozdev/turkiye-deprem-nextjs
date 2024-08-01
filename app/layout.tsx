@@ -20,16 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
-          <main className="sm:container sm:px-0 py-4 px-3 sm:mt-10">
-            {children}
-          </main>
+          <main className="sm:container lg:px-0 px-3 sm:h-[calc(100vh-56px)] py-10 sm:py-0">{children}</main>
         </ThemeProvider>
       </body>
     </html>
