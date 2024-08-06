@@ -2,9 +2,6 @@
 
 import { TrendingUp } from "lucide-react";
 import { Label, PolarGrid, PolarRadiusAxis, RadialBar, RadialBarChart } from "recharts";
-import { WikiProps } from "@/data/wiki";
-import { SehirTypes } from "@/data/sehir";
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartConfig, ChartContainer } from "@/components/ui/chart";
 
@@ -18,19 +15,14 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-interface DepremDataProps {
-  sehir: SehirTypes;
-  depremData: WikiProps;
-}
-
-export default function Bina({ sehir, depremData }: DepremDataProps) {
+export default function PieYikilanBina({ depremData }: any) {
   const chartData = [{ browser: "safari", visitors: depremData.bina, fill: "var(--color-safari)" }];
 
   return (
     <Card className="flex flex-col h-[387px]">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Hasarlı ve Yıkılan Bina</CardTitle>
-        <CardDescription>{sehir.year}</CardDescription>
+        <CardTitle className="text-xl">Hasarlı ve Yıkılan Bina</CardTitle>
+        <CardDescription></CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">

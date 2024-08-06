@@ -2,8 +2,7 @@
 
 import { TrendingUp } from "lucide-react";
 import { Label, PolarGrid, PolarRadiusAxis, RadialBar, RadialBarChart } from "recharts";
-import { WikiProps } from "@/data/wiki";
-import { SehirTypes } from "@/data/sehir";
+import { TurkiyeDepremTarihiProps } from "@/data/turkiye-deprem-tarihi";
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartConfig, ChartContainer } from "@/components/ui/chart";
@@ -19,18 +18,17 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 interface DepremDataProps {
-  sehir: SehirTypes;
-  depremData: WikiProps;
+  depremData: TurkiyeDepremTarihiProps;
 }
 
-export default function Vefat({ sehir, depremData }: DepremDataProps) {
+export default function PieHayatiniKaybeden({ depremData }: DepremDataProps) {
   const chartData = [{ browser: "safari", visitors: depremData.die, fill: "var(--color-safari)" }];
 
   return (
-    <Card className="flex flex-col h-[387px]">
+    <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
-        <CardTitle className="text-center">Hayatını Kaybeden</CardTitle>
-        <CardDescription>{sehir.year}</CardDescription>
+        <CardTitle className="text-xl">Hayatını Kaybeden</CardTitle>
+        <CardDescription></CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
@@ -39,7 +37,7 @@ export default function Vefat({ sehir, depremData }: DepremDataProps) {
               gridType="circle"
               radialLines={false}
               stroke="none"
-              className="first:fill-muted last:fill-background"
+              className="first:fill-muted last:fill-background "
               polarRadius={[86, 74]}
             />
             <RadialBar dataKey="visitors" background />

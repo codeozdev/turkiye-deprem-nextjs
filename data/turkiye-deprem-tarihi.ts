@@ -1,5 +1,6 @@
-export interface WikiProps {
+export interface TurkiyeDepremTarihiProps {
   id: number;
+  name: string;
   nufus: number;
   die: number;
   bina: number;
@@ -13,11 +14,12 @@ export interface WikiProps {
   wiki: string;
 }
 
-export const wiki: WikiProps[] = [
+export const turkiyeDepremTarihi: TurkiyeDepremTarihiProps[] = [
   {
     id: 1,
-    nufus: 24982,
-    die: 2514,
+    name: "Hakkari",
+    nufus: 24_982,
+    die: 2_514,
     bina: 3_000,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -38,8 +40,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 2,
-    nufus: 158498,
-    die: 32968,
+    name: "Erzincan",
+    nufus: 158_498,
+    die: 32_968,
     bina: 116_720,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -67,8 +70,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 3,
-    nufus: 317919,
-    die: 3014,
+    name: "Tokat",
+    nufus: 317_919,
+    die: 3_014,
     bina: 32_000,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -89,8 +93,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 4,
-    nufus: 363384,
-    die: 4014,
+    name: "Kastamonu",
+    nufus: 363_384,
+    die: 4_014,
     bina: 40_000,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -112,8 +117,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 5,
-    nufus: 257393,
-    die: 3959,
+    name: "Bolu",
+    nufus: 257_393,
+    die: 3_959,
     bina: 20_865,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -134,7 +140,8 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 6,
-    nufus: 289429,
+    name: "Çanakkale",
+    nufus: 289_429,
     die: 265,
     bina: 6_750,
     getDiePercentage() {
@@ -158,7 +165,8 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 7,
-    nufus: 267579,
+    name: "Muğla/Fethiye",
+    nufus: 267_579,
     die: 67,
     bina: 3_200,
     getDiePercentage() {
@@ -185,7 +193,8 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 8,
-    nufus: 318219,
+    name: "Bolu/Abant",
+    nufus: 318_219,
     die: 52,
     bina: 5_200,
     getDiePercentage() {
@@ -204,7 +213,8 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 9,
-    nufus: 670669,
+    name: "Balıkesir/Gönen",
+    nufus: 670_669,
     die: 23,
     bina: 5_398,
     getDiePercentage() {
@@ -227,8 +237,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 10,
-    nufus: 439967,
-    die: 1086,
+    name: "Kütahya/Gediz",
+    nufus: 439_967,
+    die: 1_086,
     bina: 19_291,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -253,8 +264,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 11,
-    nufus: 325763,
-    die: 3841,
+    name: "Van",
+    nufus: 325_763,
+    die: 3_841,
     bina: 9_232,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -276,8 +288,9 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 12,
-    nufus: 1206085,
-    die: 17482,
+    name: "Kocaeli/Gölcük",
+    nufus: 1_206_085,
+    die: 17_482,
     bina: 73_342,
     getDiePercentage() {
       const percentage = (this.die / this.nufus) * 100;
@@ -299,7 +312,8 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 13,
-    nufus: 314266,
+    name: "Düzce",
+    nufus: 314_266,
     die: 763,
     bina: 35_519,
     getDiePercentage() {
@@ -324,7 +338,8 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 14,
-    nufus: 1022532,
+    name: "Van",
+    nufus: 1_022_532,
     die: 644,
     bina: 17_005,
     getDiePercentage() {
@@ -350,6 +365,7 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 15,
+    name: "Kahramanmaraş",
     nufus: 1_116_618,
     die: 53_104,
     bina: 239_151,
@@ -377,6 +393,7 @@ export const wiki: WikiProps[] = [
   },
   {
     id: 16,
+    name: "Kahramanmaraş",
     nufus: 1_116_618,
     die: 53_104,
     bina: 239_151,
