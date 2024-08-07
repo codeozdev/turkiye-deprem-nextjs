@@ -34,7 +34,7 @@ export default function SehirlerIdPage({ params }: any) {
             priority
           />
         </div>
-        <div className="absolute -top-4 -left-4 px-3 font-semibold text-white bg-red-500 z-10">{depremData.name}</div>
+        <div className="absolute -top-4 -left-4 px-3 font-semibold text-white bg-red-500">{depremData.name}</div>
         <div
           className={`absolute top-0 right-0 rounded-full translate-x-5 -translate-y-4 p-2 w-[50px] h-[50px] text-center text-white border-4 border-white dark:border-black  bg-red-500`}
         >
