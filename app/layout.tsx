@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-roboto">
+      <body className="font-ubuntu">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
           <main className="max-w-6xl 3xl:max-w-7xl mx-auto my-20">{children}</main>

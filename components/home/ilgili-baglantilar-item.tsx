@@ -8,8 +8,8 @@ export interface IlgiliBaglantilarItemProps {
 
 export default function IlgiliBaglantilarItem({ item }: IlgiliBaglantilarItemProps) {
   return (
-    <Link href={item.link} target="_blank">
-      <Image src={item.logo} alt="logo" width={250} height={250} className="aspect-square object-fill w-full" />
+    <Link href={item.link} target="_blank" className="border">
+      <Image src={item.logo} alt="logo" width={600} height={600} className="aspect-square object-fill " />
     </Link>
   );
 }

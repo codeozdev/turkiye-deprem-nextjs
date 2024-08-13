@@ -5,7 +5,7 @@ export default function IlgiliBaglantilarList() {
   return (
     <div>
       <h4 className="my-5">İlgili Bağlantılar</h4>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-8 gap-2 sm:gap-5">
         {ilgiliBaglantilar.map((item) => (
           <IlgiliBaglantilarItem key={item.id} item={item} />
         ))}

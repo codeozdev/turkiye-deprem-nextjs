@@ -69,6 +69,7 @@ const config = {
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
       screens: {
         "3xl": "2000px",
